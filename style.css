@@ -5,7 +5,24 @@ body {
 
     align-items: center;
 }
+@keyframes real {
+    0% {text-shadow: -3px -1px 2px #fff;
+        text-shadow: -3px -1px 2px red;
+        text-shadow: -3px -1px 2px #fff;
+        text-shadow: -3px -1px 2px red;}
+    50% {    text-shadow: 
+        2px 2px 1px red, 
+        -2px -2px 1px #fff, 
+        2px -2px 1px red, 
+        -2px 2px 1px #fff;}
+    100% {text-shadow: -3px -1px 2px #fff;
+        text-shadow: -3px -1px 2px red;
+        text-shadow: -3px -1px 2px #fff;
+        text-shadow: -3px -1px 2px red;}
+    
+}
 h1{
+    
     background-image: url("animated-fire.gif");
     display: flex;
     justify-content: center;
@@ -13,12 +30,20 @@ h1{
     max-width: fit-content;
     padding: 30px;
     color:black;
-    text-shadow: 3px 1px 2px red;
+    /*text-shadow: 3px 1px 2px red;*/
+    animation-name: real;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
 }
 #enclosure {
     display: flex;
     width: 800px;
     height: 800px;
     flex-wrap: wrap;
+    
+}
+label {
+    font-stretch: extra-condensed;
 }
 
